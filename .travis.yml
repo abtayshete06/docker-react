@@ -6,4 +6,4 @@ before_install:
   - docker build -t abtayshete06/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -it abtayshete06/docker-react npm run test -- --coverage 
+  - docker run  abtayshete06/docker-react npm run test -- --coverage 
