@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t abtayshete06/docker-react -it -f Dockerfile.dev .
+  - docker build -t abtayshete06/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run abtayshete06/docker-react npm run test -- --coverage 
+  - docker run -it abtayshete06/docker-react npm run test -- --coverage 
