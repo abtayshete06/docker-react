@@ -14,11 +14,11 @@ deploy:
   app: "my-react-app"
   env: "MyReactApp-env"
   bucket_name: "elasticbeanstalk-ap-south-1-870022753381"
-  bucket_path: "my-react-app"
+#  bucket_path: "my-react-app"
   on:
     branch: master
   access_key_id:
-    secure: "$AWS_Access_Key"
+    secure: "AKIA4VELFVRS66R3NTGY"
   secret_access_key:
-    secure: "$AWS_Secret_Access_Key"
+    secure: "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"
  
