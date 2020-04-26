@@ -8,11 +8,11 @@ before_install:
 script:
   - docker run  -e CI=true  abtayshete06/docker-react npm run test -- --coverage
 
-after_success:
-  #log in to docker CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  #take built images and push to DOcker hub
-  - docker push abtayshete06/docker-react
+#after_success:
+#  #log in to docker CLI
+#  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+#  #take built images and push to DOcker hub
+#  - docker push abtayshete06/docker-react
 
 deploy:
   provider: elasticbeanstalk
